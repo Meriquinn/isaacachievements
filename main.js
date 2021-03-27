@@ -30,8 +30,8 @@ class ach {
   }
 }
 function tblInit() {
-  var $r1_1 = new ach(1, "Magdalene", "Have 7 or more Red Heart containers at one time.", "https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/e/ef/Achievement_Magdalene_icon.png/revision/latest/", "https://bindingofisaacrebirth.fandom.com/wiki/Magdalene");
-  var $r1_2 = new ach(2, "Cain", "Hold 55 coins at one time.", "https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/2/22/Achievement_Cain_icon.png/revision/latest/", "https://bindingofisaacrebirth.fandom.com/wiki/Cain");
+  var $r1_1 = new ach(1, "Magdalene", "Have 7 or more Red Heart containers at one time.", "https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/e/ef/Achievement_Magdalene_icon.png", "https://bindingofisaacrebirth.fandom.com/wiki/Magdalene");
+  var $r1_2 = new ach(2, "Cain", "Hold 55 coins at one time.", "https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/2/22/Achievement_Cain_icon.png", "https://bindingofisaacrebirth.fandom.com/wiki/Cain");
   var x;
   var achievements = [$r1_1, $r1_2];
   for (x of achievements) {
