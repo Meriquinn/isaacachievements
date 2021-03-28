@@ -33,8 +33,9 @@ function tblInit() {
   var $r1_1 = new ach(1, "Magdalene", "Have 7 or more Red Heart containers at one time.", "https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/e/ef/Achievement_Magdalene_icon.png", "https://bindingofisaacrebirth.fandom.com/wiki/Magdalene");
   var $r1_2 = new ach(2, "Cain", "Hold 55 coins at one time.", "https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/2/22/Achievement_Cain_icon.png", "https://bindingofisaacrebirth.fandom.com/wiki/Cain");
   var $r1_3 = new ach(3, "Judas", "Defeat Satan.", "https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/e/eb/Achievement_Judas_icon.png", "https://bindingofisaacrebirth.fandom.com/wiki/Judas")
+  var $r4_4 = new ach(4, "The Womb", "Defeat Mom.", "https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/9/92/Achievement_The_Womb_icon.png", "https://bindingofisaacrebirth.fandom.com/wiki/The_Womb")
   var x;
-  var achievements = [$r1_1, $r1_2];
+  var achievements = [$r1_1, $r1_2, $r1_3, $r4_4];
   for (x of achievements) {
     achLoop(x);
   }
