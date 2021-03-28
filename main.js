@@ -44,7 +44,6 @@ function achLoop(y) {
   let cellA = row.insertCell(0);
   let cellB = row.insertCell(1);
   let cellC = row.insertCell(2);
-  cellA.setAttribute('class', 'image')
   cellA.innerHTML = "<a href='"+y.link+"' title='"+y.name+"' id='"+y.number+"'></a>";
   let nmbr = document.getElementById(y.number);
   nmbr.innerHTML = "<img src='"+y.image+"' alt='"+y.name+"' decoding='async' height='64' width='64'>";
