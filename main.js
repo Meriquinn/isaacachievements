@@ -32,6 +32,7 @@ class ach {
 function tblInit() {
   var $r1_1 = new ach(1, "Magdalene", "Have 7 or more Red Heart containers at one time.", "https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/e/ef/Achievement_Magdalene_icon.png", "https://bindingofisaacrebirth.fandom.com/wiki/Magdalene");
   var $r1_2 = new ach(2, "Cain", "Hold 55 coins at one time.", "https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/2/22/Achievement_Cain_icon.png", "https://bindingofisaacrebirth.fandom.com/wiki/Cain");
+  var $r1_3 = new ach(3, "Judas", "Defeat Satan.", "https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/e/eb/Achievement_Judas_icon.png", "https://bindingofisaacrebirth.fandom.com/wiki/Judas")
   var x;
   var achievements = [$r1_1, $r1_2];
   for (x of achievements) {
@@ -44,9 +45,7 @@ function achLoop(y) {
   let cellA = row.insertCell(0);
   let cellB = row.insertCell(1);
   let cellC = row.insertCell(2);
-  cellA.innerHTML = "<a href='"+y.link+"' title='"+y.name+"' id='"+y.number+"'></a>";
-  let nmbr = document.getElementById(y.number);
-  nmbr.innerHTML = "<img src='"+y.image+"' alt='"+y.name+"' decoding='async' height='64' width='64'>";
+  cellA.innerHTML = "<a href='"+y.link+"' title='"+y.name+"' id='"+y.number+"'><img src='"+y.image+"' alt='"+y.name+"' decoding='async' height='64' width='64'></a>";
   cellB.innerHTML = y.unlock;
   cellC.innerHTML = y.number;
 }
